@@ -30,7 +30,11 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 ## How to use this source ?
 
-Then copy this command below and **change the mydomain.com to your domain** and **change the email@email.com to your email address** and run it inside your new server. Make sure that your domain is pointing to your server IP.
+Then copy this command below and **change the mydomain.com to your domain** and **change the email@email.com to your email address** and run it inside your new server. 
+
+Make sure that your domain is pointing to your server IP.
+
+Open `80`,`443` port for connect.
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
