@@ -11,6 +11,7 @@ These are some reassons why use this Docker Compose in your production environme
 ## Stack
 
 - Ubuntu 20.04 LTS
+- Rhymix latest
 - Php7.4 latest docker image(alpine)
 - MariaDB latest docker imgae
 - Nginx latest docker image(alpine)
