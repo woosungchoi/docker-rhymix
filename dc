@@ -14,11 +14,12 @@ fi
 
 if [ "$1" == "setup" ]; then
   echo 'Setting system...' \
-  && rm -rf ghost; git clone https://github.com/woosungchoi/docker-rhymix rhymix \
+  && rm -rf rhymix; git clone https://github.com/woosungchoi/docker-rhymix rhymix \
   && cd rhymix \
   && sed -i "s/<domain>/$2/g" docker-compose.yml \
   && sed -i "s/<domain>/$2/g" docker-compose.production.yml \
   && sed -i "s/<email>/$3/g" docker-compose.yml \
+  && sed -i "s/<domain>/$2/g" nginx/conf.d/ssl-conf \
   && sed -i "s/<domain>/$2/g" nginx/conf.d/rhymix.conf \
   && sed -i "s/<domain>/$2/g" nginx/conf.d/portainer.conf \
   && sed -i "s/<domain>/$2/g" nginx/conf.d/phpmyadmin.conf \
@@ -37,8 +38,8 @@ if [ "$1" == "setup" ]; then
   && sudo docker-compose up \
   && echo 'Preparing docker-compose up' \
   && sudo docker-compose down -v \
-  && sudo mkdir -p /usr/share/nginx/html; \
-  && curl -sSLo nginx/conf.d/options-ssl-nginx https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf \
+  && sudo mkdir -p /usr/share/nginx/html;
+  curl -sSLo nginx/conf.d/options-ssl-nginx https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf \
   && curl -sSLo nginx/conf.d/rhymix-rewrite https://raw.githubusercontent.com/rhymix/rhymix/master/common/manual/server_config/rhymix-nginx.conf \
   && sudo chmod a+x build/docker-entrypoint.sh \
   && mv docker-compose.yml docker-compose.ssl.yml \
