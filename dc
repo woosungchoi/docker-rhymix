@@ -37,7 +37,7 @@ if [ "$1" == "setup" ]; then
   && sudo docker-compose up \
   && echo 'Preparing docker-compose up' \
   && sudo docker-compose down -v \
-  && sudo mkdir -p /usr/share/nginx/html; \
+  && sudo mkdir -p /usr/share/nginx/html
   && curl -sSLo nginx/conf.d/options-ssl-nginx https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf \
   && curl -sSLo nginx/conf.d/rhymix-rewrite https://raw.githubusercontent.com/rhymix/rhymix/master/common/manual/server_config/rhymix-nginx.conf \
   && sudo chmod a+x build/docker-entrypoint.sh \
