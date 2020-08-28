@@ -30,10 +30,38 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sud
 curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/master/dc | bash -s setup mydomain.com email@email.com
 ```
 
+## Rhymix Install Configuration
+
+DB : `mysql`
+
+DB server address : `db`
+
+DB server port : `3306`
+
+DB ID : `dbuser`
+
+DB Password : `dbuserpassword`
+
+DB name : `rhymix`
+
+
+## Rhymix Redis cache configuration
+
+Admin panel(관리자 페이지) -> Configuration(설정) -> System configuration(시스템 설정) -> Advanced configuration(고급설정)
+
+Cache enable(캐시 사용) : `redis`
+
+Host(호스트) : `redis`
+
+Port(포트) : `6379`
+
+DB number(DB번호) : `1`
+
+
 ## Commands
 
 | Commands  | Description  |
 |---|---|
 | `./dc start`  | Start your containers  |
 | `./dc stop`  | Stop all containers  |
-| `./dc update`  | Get Ghost updates and restart containers |
+| `./dc update`  | Get lastest docker images update and restart containers |
