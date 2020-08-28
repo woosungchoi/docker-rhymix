@@ -30,11 +30,15 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 ## How to use this source ?
 
-Then copy this command below and **change the mydomain.com to your domain** and **change the email@email.com to your email address** and run it inside your new server. Make sure that your domain is pointing to your server IP.
+Make sure that your domain is pointing to your server IP.
+
+Open `80`,`443` port for connect.
+
+Copy this command below and **change the yourdomain.com to your domain** and **change the email@email.com to your email address** and run it inside your new server. 
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
-curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/master/dc | bash -s setup mydomain.com email@email.com
+curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/master/dc | bash -s setup yourdomain.com email@email.com
 ```
 
 ## Rhymix Install Configuration
@@ -64,6 +68,13 @@ Port(포트) : `6379`
 
 DB number(DB번호) : `1`
 
+## URLs
+
+Rhymix : https://yourdomain.com
+
+Phpmyadmin : https://pma.yourdomain.com
+
+Portainer : https://port.yourdomain.com
 
 ## Commands
 
