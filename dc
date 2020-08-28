@@ -42,6 +42,7 @@ if [ "$1" == "setup" ]; then
   curl -sSLo nginx/conf.d/options-ssl-nginx https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf \
   && curl -sSLo nginx/conf.d/rhymix-rewrite https://raw.githubusercontent.com/rhymix/rhymix/master/common/manual/server_config/rhymix-nginx.conf \
   && sudo chmod a+x build/docker-entrypoint.sh \
+  && sudo chmod a+x dc \
   && mv docker-compose.yml docker-compose.ssl.yml \
   && mv docker-compose.production.yml docker-compose.yml \
   && echo 'Configuring cron...' \

@@ -11,11 +11,12 @@ These are some reassons why use this Docker Compose in your production environme
 ## Stack
 
 - Ubuntu 20.04 LTS
+- Rhymix latest(including rewrite configuration)
 - Php7.4 latest docker image(alpine)
 - MariaDB latest docker imgae
 - Nginx latest docker image(alpine)
-- Letsencrypt latest docker image
-- Redis lastest docker image(alpine)
+- Certbot latest docker image
+- Redis latest docker image(alpine)
 - Phpmyadmin latest docker image(fpm-alpine)
 - Portainer latest docker image
 - Docker
@@ -64,4 +65,4 @@ DB number(DB번호) : `1`
 |---|---|
 | `./dc start`  | Start your containers  |
 | `./dc stop`  | Stop all containers  |
-| `./dc update`  | Get lastest docker images update and restart containers |
+| `./dc update`  | Get latest docker images update and restart containers |
