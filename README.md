@@ -68,7 +68,7 @@ Port(포트) : `6379`
 
 DB number(DB번호) : `1`
 
-## Urls
+## URLs
 
 Rhymix : https://yourdomain.com
 
