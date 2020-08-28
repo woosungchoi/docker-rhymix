@@ -16,7 +16,7 @@ These are some reassons why use this Docker Compose in your production environme
 - MariaDB latest docker imgae
 - Nginx latest docker image(alpine)
 - Certbot latest docker image
-- Redis lastest docker image(alpine)
+- Redis latest docker image(alpine)
 - Phpmyadmin latest docker image(fpm-alpine)
 - Portainer latest docker image
 - Docker
