@@ -42,7 +42,7 @@ DB ID : `dbuser`
 
 DB Password : `dbuserpassword`
 
-DB name : rhymix
+DB name : `rhymix`
 
 
 ## Rhymix Redis cache configuration
