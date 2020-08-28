@@ -8,4 +8,4 @@ services:
       - 80:80
     volumes:
       - ./ssl/:/etc/letsencrypt/
-    command: certonly --standalone -d <domain> -d www.<domain> -d port.<domain> -d pma.<domain> -m <email> --no-eff-email --agree-tos
+    command: certonly --staging --standalone -d <domain> -d www.<domain> -d port.<domain> -d pma.<domain> -m <email> --no-eff-email --agree-tos
