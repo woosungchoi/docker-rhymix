@@ -65,4 +65,4 @@ DB number(DB번호) : `1`
 |---|---|
 | `./dc start`  | Start your containers  |
 | `./dc stop`  | Stop all containers  |
-| `./dc update`  | Get lastest docker images update and restart containers |
+| `./dc update`  | Get latest docker images update and restart containers |
