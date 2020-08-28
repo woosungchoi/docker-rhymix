@@ -14,7 +14,7 @@ fi
 
 if [ "$1" == "setup" ]; then
   echo 'Setting system...' \
-  && rm -rf ghost; git clone https://github.com/woosungchoi/docker-rhymix rhymix \
+  && rm -rf rhymix; git clone https://github.com/woosungchoi/docker-rhymix rhymix \
   && cd rhymix \
   && sed -i "s/<domain>/$2/g" docker-compose.yml \
   && sed -i "s/<domain>/$2/g" docker-compose.production.yml \
