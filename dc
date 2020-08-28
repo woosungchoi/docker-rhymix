@@ -19,6 +19,7 @@ if [ "$1" == "setup" ]; then
   && sed -i "s/<domain>/$2/g" docker-compose.yml \
   && sed -i "s/<domain>/$2/g" docker-compose.production.yml \
   && sed -i "s/<email>/$3/g" docker-compose.yml \
+  && sed -i "s/<domain>/$2/g" nginx/conf.d/ssl-conf \
   && sed -i "s/<domain>/$2/g" nginx/conf.d/rhymix.conf \
   && sed -i "s/<domain>/$2/g" nginx/conf.d/portainer.conf \
   && sed -i "s/<domain>/$2/g" nginx/conf.d/phpmyadmin.conf \
