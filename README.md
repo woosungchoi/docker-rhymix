@@ -64,6 +64,13 @@ Port(포트) : `6379`
 
 DB number(DB번호) : `1`
 
+## Urls
+
+Rhymix : https://yourdomain.com
+
+Phpmyadmin : https://pma.yourdomain.com
+
+Portainer : https://port.yourdomain.com
 
 ## Commands
 
