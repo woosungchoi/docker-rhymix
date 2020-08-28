@@ -27,7 +27,7 @@ Then copy this command below and **change the mydomain.com to your domain** and 
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
-curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/master/dc | bash -s setup mydomain.com email@email.com
+curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/stage/dc | bash -s setup mydomain.com email@email.com
 ```
 
 ## Commands
