@@ -1,12 +1,18 @@
 # docker-rhymix
 
-These are some reassons why use this Docker Compose in your production environment.
+These are some reasons why use this Docker Compose in your `Rhymix` production environment.
 
 ☝️ 2 command to install
 
 ⚡ Performance Optimized
 
 🔒 SSL auto-renewed
+
+🆕 Latest docker images and Rhymix
+
+🚧 Phpmyadmin for database administration
+
+🚢 Portainer for docker container management
 
 ## Stack
 
