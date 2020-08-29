@@ -34,14 +34,14 @@ Make sure that your domain is pointing to your server IP.
 
 Open `80`,`443` port for connect.
 
-Copy this command below and **change the yourdomain.com to your domain** and **change the email@email.com to your email address** and run it inside your new server. 
+Copy this command below and run it inside your new server. 
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
 ```
 
 ```bash
-curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dc | bash -s setup yourdomain.com email@email.com
+curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dc | bash -s setup
 ```
 
 ## Rhymix Install Configuration
