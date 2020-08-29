@@ -19,7 +19,7 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 - Ubuntu 20.04 LTS
 - Rhymix latest(including rewrite configuration)
 - Php7.4 latest docker image(alpine)
-- MariaDB latest docker imgae
+- MariaDB latest docker image
 - Nginx latest docker image(alpine)
 - Certbot latest docker image
 - Redis latest docker image(alpine)
@@ -30,7 +30,7 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 ## How to use this source ?
 
-Make sure that your domain is pointing to your server IP.
+Make sure that your `domain` and `*.domain` are pointing to your server IP.
 
 Open `80`,`443` port for connect.
 
@@ -52,11 +52,11 @@ DB server address : `db`
 
 DB server port : `3306`
 
-DB ID : `dbuser`
+DB ID : `YOUR DATABASE USERNAME`
 
-DB Password : `dbuserpassword`
+DB Password : `YOUR DATABASE PASSWORD`
 
-DB name : `rhymix`
+DB name : `YOUR DATABASE NAME`
 
 
 ## Rhymix Redis cache configuration
