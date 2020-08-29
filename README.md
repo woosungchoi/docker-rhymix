@@ -38,7 +38,7 @@ Copy this command below and **change the yourdomain.com to your domain** and **c
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
-curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/master/dc | bash -s setup yourdomain.com email@email.com
+curl -s https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dc | bash -s setup yourdomain.com email@email.com
 ```
 
 ## Rhymix Install Configuration
