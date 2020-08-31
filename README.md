@@ -30,7 +30,7 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 ## How to use this source ?
 
-Make sure that your `domain` and `*.domain` are pointing to your server IP.
+Make sure that your `domain` and `www.domain` and `pma.domain` and `port.domain` are pointing to your server IP.
 
 Open `80`,`443` port for connect.
 
