@@ -16,7 +16,7 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 ## Stack
 
-- Ubuntu 20.04 LTS
+- Ubuntu 20.04 LTS or Centos 8
 - Rhymix latest(including rewrite configuration)
 - Php7.4 latest docker image(alpine)
 - MariaDB latest docker image
@@ -30,11 +30,13 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 ## How to use this source ?
 
-Make sure that your `domain` and `*.domain` are pointing to your server IP.
+Make sure that your `domain` and `www.domain` and `pma.domain` and `port.domain` are pointing to your server IP.
 
 Open `80`,`443` port for connect.
 
 Copy this command below and run it inside your new server. 
+
+### For Ubuntu 20.04 LTS users
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
@@ -42,6 +44,16 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sud
 
 ```bash
 curl -o dc https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dc && bash dc setup && rm -f dc
+```
+
+### For Centos 8 users
+
+```bash
+sudo yum -y update && sudo yum install -y curl git
+```
+
+```bash
+curl -o dcc https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dcc && bash dcc setup && rm -f dcc
 ```
 
 ## Rhymix Install Configuration
