@@ -39,7 +39,7 @@ Copy this command below and run it inside your new server.
 ### For Ubuntu 20.04 LTS users
 
 ```bash
-sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git cron -y && sudo apt autoremove -y
 ```
 
 ```bash
@@ -49,7 +49,7 @@ curl -o dc https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dc &
 ### For Centos 8 users
 
 ```bash
-sudo yum -y update && sudo yum install -y curl git
+sudo yum -y update && sudo yum install -y curl git crontabs
 ```
 
 ```bash
