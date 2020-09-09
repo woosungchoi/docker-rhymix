@@ -91,6 +91,28 @@ Phpmyadmin : https://pma.yourdomain.com
 
 Portainer : https://port.yourdomain.com
 
+## How do I use this source locally and non SSL on dev environments?
+
+### For Ubuntu 20.04 LTS users
+
+```bash
+sudo apt update -y && sudo apt upgrade -y && sudo apt install curl git -y && sudo apt autoremove -y
+```
+
+```bash
+curl -o dcl https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dcl && bash dcl setup && rm -f dcl
+```
+
+### For Centos 8 users
+
+```bash
+sudo yum -y update && sudo yum install -y curl git
+```
+
+```bash
+curl -o dccl https://raw.githubusercontent.com/woosungchoi/docker-rhymix/main/dccl && bash dccl setup && rm -f dccl
+```
+
 ## Commands
 
 | Commands  | Description  |
