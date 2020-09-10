@@ -32,6 +32,13 @@ These are some reasons why use this Docker Compose in your `Rhymix` production e
 
 Make sure that your `domain` and `www.domain` and `pma.domain` and `port.domain` are pointing to your server IP.
 
+| Type | Name | Content |
+| - | - | - |
+| A | domain.com | 123.123.123.123 |
+| A | pma | 123.123.123.123 |
+| A | port | 123.123.123.123 |
+| A | www | 123.123.123.123 |
+
 Open `80`,`443` port for connect.
 
 Copy this command below and run it inside your new server. 
