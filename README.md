@@ -103,7 +103,7 @@ chmod a+x docker_upgrade.sh
 And put it in crontab. Change the `/your/path/to/rhymix/` part of the content below.
 
 ```
-echo "30 12 * * * /your/path/to/docker-rhymix/upgrade.sh >> /var/log/docker_upgrade_cron.log 2>&1" >> mycron && sudo crontab mycron && rm mycron
+echo "30 12 * * * /your/path/to/rhymix/upgrade.sh >> /var/log/docker_upgrade_cron.log 2>&1" >> mycron && sudo crontab mycron && rm mycron
 ```
 
 ---
