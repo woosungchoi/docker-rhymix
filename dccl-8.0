@@ -54,7 +54,7 @@ if [ "$1" == "setup" ]; then
         && sudo chmod +x /usr/bin/docker-compose
         else echo 'Skip Installing Docker Compose'
      fi
-  sudo chmod a+x build/docker-entrypoint.sh \
+  sudo chmod a+x build-8.0/docker-entrypoint.sh \
   && sudo chmod a+x dc \
   && curl -sSLo nginx/conf.d/rhymix-rewrite https://raw.githubusercontent.com/rhymix/rhymix/master/common/manual/server_config/rhymix-nginx.conf \
   && echo 'Starting Docker ...' \
