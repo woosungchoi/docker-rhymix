@@ -39,7 +39,7 @@ if [ "$1" == "setup" ]; then
   && sed -i "s/<pma_port>/$PMA_PORT/g" docker-compose.yml \
   && sed -i "s/<portainer_port>/$PORTAINER_PORT/g" docker-compose.yml \
   && sed -i "s/<pma_port>/$PMA_PORT/g" nginx/conf.d/phpmyadmin.conf \
-  && sudo chmod a+x build/docker-entrypoint.sh \
+  && sudo chmod a+x build-8.0/docker-entrypoint.sh \
   && sudo chmod a+x dc \
   && curl -sSLo nginx/conf.d/rhymix-rewrite https://raw.githubusercontent.com/rhymix/rhymix/master/common/manual/server_config/rhymix-nginx.conf \
   && echo 'Starting Docker ...' \
